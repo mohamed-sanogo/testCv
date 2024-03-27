@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.left,
+.right {
+    flex: 1;
+    max-width: 400px;
+    background-color: #fff;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.left {
+    order: 2;
+}
+
+.right {
+    order: 1;
+}
+
+/* Ajoutez ici le reste de votre style CSS pour les différentes sections */
+
+@media screen and (max-width: 768px) {
+    .left,
+    .right {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+}
