@@ -1,21 +1,31 @@
-body{
+*{
     box-sizing: 0;
     padding: 0;
+    box-shadow: 0;
     margin: 0;
 }
-
-.left{
-    margin-left: 150px; 
-    background-color: gray; 
-    width: 250px; 
+body{
+    height: 100vh;
 }
+main{
+    display: flex; 
+    padding: 2% 90px;
+}
+/* css left */
+.left{ 
+    background : wheat; 
+    width: 200px; 
+}
+/* section profil */
 .profil{  
-    background-color: black;  
-    border: 1px;
-    border-radius: 0px 0px 70% 70%;
+    background-color: black;    
+    border-radius: 0 0 70% 70%;
 }
-.profil .name h1{
-    padding: 30px 0px 0px 0px;
+.profil .name h1{ 
+    padding: 40px 0 0 0;
+    text-transform: uppercase;
+    font-size: 19px;
+    font-weight: bold;
     text-align: center;
     color: white;
 }
@@ -25,8 +35,122 @@ body{
     color: white;
 }
 .profil .img img{   
-    margin-top: 30px;
-    margin-left: 70px;
+    margin-top: 35px;
+    margin-left: 40px;
     height: 110px;
+    border: 5px solid white;
     border-radius: 50%;
 } 
+
+/* section contact */
+.contact{
+    margin-top: 30px;
+    height: 150px;
+}
+.contact .title{
+    margin-bottom: 20px;
+}
+.left .title p{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.content p{ 
+    text-align: center;
+    font-size: 12px;  
+}
+
+/* section formationLangues */
+.formationLangues{
+    color: white;
+    background: black;
+    border: none;
+    border-radius: 30% 30% 0 0;
+    height: 59vh; 
+}
+.formationLangues .formation{
+    padding: 50px 0 20px 20px;
+    margin-bottom: 35px;
+}
+.formation .title{
+    margin-bottom: 30px;
+}
+.content ul{ 
+    margin-left: 30px;
+}  
+
+.langues{
+    color: white;
+    background: black;
+}
+.langues .title{
+    margin-bottom: 20px;
+}
+.langues .content{
+    margin-left: 30px;
+}
+/* css rigth */
+.rigth{
+    margin-left: 30px;
+    width: 500px;
+    padding: 20px 0 0 0;
+}
+.rigth .title p{
+    margin: 20px 0 20px 0; 
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+}
+.rigth .content p{
+    text-align: left;
+}
+/* css experience */
+.entete{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700; 
+}
+.entete .poste p{
+    text-transform: uppercase; 
+}
+.entreprise{
+    padding: 10px 0 10px 0;
+}
+.do ul{ 
+    margin-left: 50px;
+    margin-bottom: 15px;
+}
+
+/* css competence */
+.competence .mescompetences ul{
+    margin-left: 20px; 
+}
+
+/* css realisation */
+.realisation .fait ul{
+    margin-left: 20px;
+}
+
+@media screen and (max-width : 760px) {
+    main{
+        padding: 0;
+    }
+    .profil .img img{
+        height: 80px; 
+    } 
+    .profil .name h1{  
+        font-size: 12px; 
+    }
+    .profil .name h3{ 
+        font-size: 10px; 
+    }
+    .left .title p{ 
+        font-size: 20px; 
+    }
+    .content p{  
+        font-size: 10px;  
+    }
+    
+}
