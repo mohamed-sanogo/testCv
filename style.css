@@ -64,14 +64,20 @@ main{
     align-items: center;
     margin-left: 30px;
 }
-/* .material-symbols-outlined{
-    position: relative;
-    font-size: 20px; 
-    width: 25px;
-    height: 25px; 
+span{
+    position: relative; 
+    width: 30px;
+    height: 30px; 
     border: 2px solid black;
-    border-radius: 50%; 
-}   */
+    border-radius: 50%;  
+}  
+span.material-symbols-outlined{
+    font-size: 25px;
+    text-align: center;  
+}
+span.black{
+    border-color: white;
+}
 .content p{ 
     text-align: center;
     font-size: 12px;  
