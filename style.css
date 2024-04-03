@@ -6,22 +6,28 @@
     box-shadow: 0;
     margin: 0;
 } 
+
+:root{
+    --smalFont : 12px;
+    --bigFont : 25px;
+    --bagckgroundColor : #C5C4C1;
+    --black: black;
+}
 main{
     display: flex;  
-    width: 21cm;
-    /* height: 29.7cm; */
+    width: 21cm; 
     margin: auto;
     border: 2px solid #333;
     padding-left: 50px;
 }
 /* css left */
 .left{ 
-    background : #C5C4C1; 
+    background : var(--bagckgroundColor); 
     width: 250px; 
 }
 /* section profil */
 .profil{  
-    background-color: black;    
+    background-color: var(--black);    
     border-radius: 0 0 70% 70%;
 }
 .profil .name h1{ 
@@ -34,7 +40,7 @@ main{
 }
 .profil .name h3{
     text-align: center;
-    font-size: 12px;
+    font-size: var(--smalFont);
     color: white;
 }
 .profil .img img{   
@@ -55,7 +61,7 @@ main{
 }
 .left .title p{
     text-align: center;
-    font-size: 25px;
+    font-size: var(--bigFont);
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -68,21 +74,27 @@ span{
     position: relative; 
     width: 30px;
     height: 30px; 
-    border: 2px solid black;
+    border: 2px solid var(--black);
     border-radius: 50%;  
 }  
 span.material-symbols-outlined{
-    font-size: 25px;
+    font-size: var(--bigFont);
     text-align: center;  
 }
 span.black{
     border-color: white;
 }
 .content p{ 
-    text-align: center;
-    font-size: 12px;  
+    margin-bottom: 10px;
+    /* text-align: center; */
+    margin-left: 30px;
+    font-size: 16px;   
 }
-
+.content p i{
+    font-size: 20px;
+    margin-right: 10px;
+    font-weight: bold;
+}
 /* section formationLangues */
 .formationLangues{
     color: white;
@@ -91,9 +103,10 @@ span.black{
     border-radius: 30% 30% 0 0;
     height: 59vh; 
 }
-.formationLangues .formation{
-    padding: 50px 0 20px 20px;
-    margin-bottom: 35px;
+.formationLangues { 
+    padding: 43px 0 20px 20px;
+    /* height: 70vh; */
+    /* margin-bottom: 35px; */
 }
 .formation .title{
     margin-bottom: 30px;
@@ -104,7 +117,7 @@ span.black{
 
 .langues{
     color: white;
-    background: black;
+    background: var(--black);
 }
 .langues .title{
     margin-bottom: 20px;
@@ -121,7 +134,7 @@ span.black{
 .rigth .title p{
     margin: 20px 0 20px 0; 
     text-transform: uppercase;
-    font-size: 25px;
+    font-size: var(--bigFont);
     font-weight: bold;
 }
 .rigth .content p{
@@ -163,7 +176,7 @@ span.black{
         height: 80px; 
     } 
     .profil .name h1{  
-        font-size: 12px; 
+        font-size: var(--smalFont); 
     }
     .profil .name h3{ 
         font-size: 10px; 
